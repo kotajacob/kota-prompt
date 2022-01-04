@@ -1,7 +1,7 @@
 # Kota's zsh prompt
 
 # Prompt is path, shortened with ~ and turns red on an error exit code.
-# Additionally it turns blue when in normal mode.
+# Additionally it is given a green background when in normal mode.
 # Plugin sets vi-mode if not already set.
 
 # To use you must set PROMPT='$(vi_mode_status)'
@@ -28,7 +28,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # prompt variables
-: "${VI_NORMAL_MODE_INDICATOR="%F{blue}%~ %f"}"
+: "${VI_NORMAL_MODE_INDICATOR="%K{green}%~%k "}"
 : "${VI_INSERT_MODE_INDICATOR="%(?..%F{red})%~ %f"}"
 
 # enable prompt substition
